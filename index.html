@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Алгоритм Шифрования TEA</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<section class="header-section">
+    <div class="container">
+        <div class="row">
+            <div class="header-title">
+                <h1>Алгоритм Шифрования TEA</h1>
+            </div>
+        </div>
+
+        <div class="history">
+            <p>В криптографии,Tiny Encryption Algorithm (TEA) — блочный алгоритм шифрования типа «Сеть Фейстеля».
+                Алгоритм был разработан на факультете компьютерных наук Кембриджского университета Дэвидом Уилером
+                (David Wheeler) и Роджером Нидхэмом (Roger Needham) и впервые представлен в 1994 году на симпозиуме по
+                быстрым алгоритмам шифрования в Лёвене (Бельгия). Шифр не патентован, широко используется в ряде
+                криптографических приложений и широком спектре аппаратного обеспечения благодаря крайне низким
+                требованиям к памяти и простоте реализации. Алгоритм имеет как программную реализацию на разных языках
+                программирования, так и аппаратную реализацию на интегральных схемах типа FPGA.</p>
+        </div>
+
+
+        <div class="calculator col-md-6 col-md-offset-3">
+
+            <form name="key">
+
+
+                <div class="container">
+                    <div class="form-group col-md-6">
+                        <label for="k">Ключ</label>
+                        <input type="password" id="k" name="txt" class="bxN form-control" placeholder="Введите ключ">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="k1">Повторите ключ</label>
+                        <input type="password" id="k1" name="txt1" class="bxN form-control" placeholder="Введите ключ">
+                    </div>
+                </div>
+            </form>
+
+
+            <form name="plain">
+            <fieldset class="form-group">
+                    <label for="p">Результат</label>
+                    <textarea rows="10" cols="50" name="txt" placeholder="Начните вводить текст..." class="form-control" id="p"></textarea>
+                </fieldset>
+
+                <br>
+
+                <div style="text-align: center;">
+                    <button type="button" name="encrypt" onclick="Encrypt()" class="btn btn-primary">Зашифровать</button>
+                    <button type="button" name="decrypt" onclick="Decrypt()" class="btn btn-danger">Дешифровать</button>
+                    <button type="button" name="clear" onclick="txt.value=''" class="btn btn-success">Очистить</button>
+                    <button type="button" name="clear" onclick="txt.value='QXPg2NeYpyKThgtY0E3SGxD4FA2ig5aFoIpI2GPq2+SAXZfqK6E1lPHu1J2JHDcMT42cRCIqK+eaxzeGnbkq5ZDZ2yTP+E0lYg7zImx+5cLS2RfKJZIELu4qfcYonzX8DhgQIZQBRJlVwr5mgXdjiB74PmZdSPfnmlQ2JkBNoFxBzjh2vOuWJKNFbiWWEiIL0Id5LECJ2g7lnKGmI0h1Vp5eTO5QMU0YCHLhrUMcV1Ht+iWSc3Lv8LWm7PMQCaPRmdUBVwjJoNMh9lWsKl9T5vIG43ft7Wrqo5nVblIBBdaaICHLeHyRqDQA3UPiuGqbeIBpPso7XbzuMbU91zNAQ/Ogtj2J6QZeqYKp595whBFJQOrb3OKs1RqeAlclxdr0npRrCzq64DEEYdboDnjByffE5+QKwYHv0/ncKuIpO7OSujduWdPcD8Je3sr9Y8cMnCWPoAKQkbgAyktSVA77u9yZPdclQjHNUkaRpVVh4PQKhKcGS/+JYCVnRCzE7Xzv';" class="btn btn-secondary">Случайно</button>
+
+                </div>
+
+                <br>
+
+            </form>
+        </div>
+
+
+    </div>
+</section>
+</body>
+</html>
